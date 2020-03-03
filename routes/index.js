@@ -6,11 +6,11 @@ router.get("/", function(req, res, next) {
   res.render("index", { title: "Express" });
 });
 
-router.get("/", req => res => {
+router.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-router.post("/", req => res => {
+router.post("/", (req, res) => {
   res.send("Hello World!");
 });
 
